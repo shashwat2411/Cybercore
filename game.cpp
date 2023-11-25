@@ -43,6 +43,9 @@ HRESULT InitGame()
 	PlaySound(GameSoundNo, -1);
 
 	SetFade(FADEIN);
+
+	P = GetPlayer();
+	P->color = D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f);
 	
 	return S_OK;
 }
