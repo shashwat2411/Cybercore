@@ -40,7 +40,7 @@ HRESULT InitGame()
 	LoseSound = LoadSound(lose);
 
 	SetVolume(GameSoundNo, 0.1);
-	PlaySound(GameSoundNo, -1);
+	PlaySoundInGame(GameSoundNo, -1);
 
 	SetFade(FADEIN);
 
@@ -97,7 +97,7 @@ void UpdateGame()
 	if (P->use == false)
 	{
 		SetVolume(LoseSound, 0.5);
-		PlaySound(LoseSound, 0);
+		PlaySoundInGame(LoseSound, 0);
 
 		SetFade(FADEOUT);
 		nextGame = true;

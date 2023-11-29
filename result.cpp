@@ -194,7 +194,7 @@ void UpdateResult()
 
 	if (GetKeyboardPress(DIK_RETURN))// && go == false)
 	{
-		PlaySound(ButtonSoundR, 0);
+		PlaySoundInGame(ButtonSoundR, 0);
 		SetFade(FADEOUT);
 		nextResult = true;
 	}

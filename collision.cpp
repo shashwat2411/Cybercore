@@ -77,7 +77,7 @@ void UpdateCollision()
 				Player->color.b = 0.0f;
 
 				SetVolume(Player->sound, 0.2f);
-				PlaySound(Player->sound, 0);
+				PlaySoundInGame(Player->sound, 0);
 
 				back = true;
 			}

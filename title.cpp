@@ -80,7 +80,7 @@ HRESULT InitTitle()
 
 	SetFade(FADEIN);
 	SetVolume(TitleSoundNo, 0.2f);
-	PlaySound(TitleSoundNo, -1);
+	PlaySoundInGame(TitleSoundNo, -1);
 
 	return S_OK;
 }
@@ -184,7 +184,7 @@ void UpdateTitle()
 	
 	if (GetKeyboardPress(DIK_RETURN))// && go == false)
 	{
-		PlaySound(ButtonSound, 0);
+		PlaySoundInGame(ButtonSound, 0);
 		SetFade(FADEOUT);
 		next = true;
 	}

@@ -219,7 +219,7 @@ void SetBullet()
 			g_Bullet[i].rotation = Player->rotation;
 			g_Bullet[i].use = true;
 			SetVolume(BulletSoundNo,0.06f);
-			PlaySound(BulletSoundNo, 0); //’e‚ª”­Ë‚³‚ê‚½‰¹‚ğÄ¶
+			PlaySoundInGame(BulletSoundNo, 0); //’e‚ª”­Ë‚³‚ê‚½‰¹‚ğÄ¶
 			return;
 		}
 	}

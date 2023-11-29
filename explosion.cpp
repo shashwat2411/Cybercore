@@ -155,7 +155,7 @@ void SetExplosion(D3DXVECTOR2 Position, D3DXVECTOR2 Size, D3DXCOLOR Color, float
 			g_Explosion[i].use = true;
 
 			SetVolume(ExplosionSoundNo, Volume);
-			PlaySound(ExplosionSoundNo, 0);
+			PlaySoundInGame(ExplosionSoundNo, 0);
 
 			return;
 		}
